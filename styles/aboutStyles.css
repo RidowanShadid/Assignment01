@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+}
+
+.student-id {
+  float: right;
+}
+
+table ,th, td {
+    margin: auto;
+    text-decoration: none;
+    
+    border: 1px solid #cccc;
+}
+
+figure:hover {
+    display:none
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas:
+    "TimeTable CandQ"
+    "GPhoto GPhoto"
+    "FunFacts FunFacts";
+  gap: 2em;
+}
+
+#TimeTable {
+  grid-area: TimeTable;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1em;
+  padding: 1em;
+  text-align: left;
+  box-shadow: 0 6px 12px #aaa;
+}
+
+#CandQ {
+  grid-area: CandQ;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1em;
+  padding: 1em;
+  text-align: left;
+  box-shadow: 0 6px 12px #aaa;
+}
+
+#GPhoto {
+  grid-area: GPhoto;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 6px 12px #aaa;;
+}
+
+#FunFacts {
+  grid-area: FunFacts;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 6px 12px #aaa;
+}
