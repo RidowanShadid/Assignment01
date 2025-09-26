@@ -49,21 +49,19 @@ nav ul li a {
 
 /* Index */
 section a {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
   font-weight: bold;
   font-size: 25px;
-  width: 500px;
+  width: 50%;
   height: 100px;
   border: 1px solid #ccc;
   background-color: #e0e0e0;
-  transition: width 1s, background-color 1s;
+  transition: font-size 1s, width 1s, background-color 1s;
 }
 
 section a:hover {
+  font-size: 2rem;
+  width: 90%;
   background-color: #4682b4;
-  width: 1250px;
 }
 
 nav ul li a:hover {
@@ -376,5 +374,40 @@ form {
   button[type="submit"],
   button[type="reset"] {
     flex: 1 1 auto;
+  }
+
+  /* Responsive (About Page): Extend width of Class Info and Contributions under 640px */
+  #about {
+    grid-template-areas:
+    "TimeTable TimeTable"
+    "CandQ CandQ"
+    "GPhoto GPhoto"
+    "FunFacts FunFacts";
+  }
+}
+
+/* Responsive: Keep menu within viewport under 800px */
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  nav ul{
+    display: block;
+  }
+
+  nav ul li a {
+    float: left;
+  }
+
+  /* Responsive (Jobs Page): Move apply window to top and extend position windows under 800px */
+  #jobs-aside {
+    width: 80%;
+    float: none;
+  }
+
+  .job-card {
+    width: 80%;
   }
 }
