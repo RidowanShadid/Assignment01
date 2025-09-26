@@ -395,15 +395,6 @@ form {
   button[type="reset"] {
     flex: 1 1 auto;
   }
-
-  /* Responsive (About Page): Extend width of Class Info and Contributions under 640px */
-  #about {
-    grid-template-areas:
-    "TimeTable TimeTable"
-    "CandQ CandQ"
-    "GPhoto GPhoto"
-    "FunFacts FunFacts";
-  }
 }
 
 /* Responsive: Keep menu within viewport under 800px */
